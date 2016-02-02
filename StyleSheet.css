@@ -1,0 +1,124 @@
+@import 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/230399/framework7.css';
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+body,
+html {
+  background: url("http://i.imgur.com/UVSN2LU.jpg") no-repeat center center;  
+  background-size: cover;
+  padding: 0px;
+}
+header {
+  margin-bottom: 1em;
+  height: 5vw;
+  background: #f00;
+  padding: 1vw;
+}
+header h2 {
+  color: #0ff;
+  float: left;
+  font-weight: 400;
+  line-height: 1vw;
+}
+header select {
+  float: right;
+  font-size: 1.4vw;
+  padding: .2vw;
+  margin: 1vw;
+}
+#neighborhood {
+  display: inline;
+  float: left;
+  width: 31.25%;
+  margin: 0 1.04166667%;
+}
+.summary {
+  width: 28vw;
+  float: left;
+  margin: 2vw;
+}
+#map {
+  border: solid 1px #747879;
+  height: 28vw;
+  width: 28vw;
+  position: relative;
+  margin: 2vw;
+}
+#sensors {
+  display: inline;
+  float: left;
+  width: 64.58333333%;
+  margin: 0 1.04166667%;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+}
+#sensors .sensor {
+  margin-top: 1vw;
+  position: relative;
+  height: 13vw;
+}
+#sensors #x_axis {
+  margin-left: 10.8vw;
+  padding-bottom: 4vw;
+}
+#sensors .frequency {
+  font-size: 1.1vw;
+  text-align: center;
+  color: #567A86;
+  padding: 4px;
+  padding-right: 38px;
+  margin-left: 10.8vw;
+}
+#sensors .rickshaw_graph {
+  float: left;
+  width: auto;
+}
+#sensors .sensor .category {
+  float: left;
+  text-align: center;
+  width: 10vw;
+  margin-top: -1.6vw;
+}
+#sensors .sensor .category .label {
+  font-weight: 500;
+  font-size: 1.4vw;
+}
+#sensors .sensor .category .average {
+  font-size: 1.6vw;
+}
+#sensors .sensor .inline {
+  font-size: .9vw;
+  color: #6E6D71;
+}
+#sensors .sensor .icon {
+  width: 60px;
+  text-align: center;
+}
+#y_axis {
+  height: 100%;
+  width: 40vw;
+  position: relative;
+  width: 40px;
+  font-size: 8px;
+  float: left;
+}
+@media screen and (max-width: 720px) {
+  #sensors,
+  #neighborhood {
+    display: inline;
+    float: left;
+    width: 97.91666667%;
+    margin: 0 1.04166667%;
+    margin-bottom: 1em;
+  }
+}
